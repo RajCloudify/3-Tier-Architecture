@@ -25,17 +25,17 @@
 ```
 ### ->>connect to backend server--
 ```
- git clone https://github.com/CloudTechDevOps/2nd10WeeksofCloudOps-main.git
+
    cd backend
 ```
  ### edit the .env file in bellow path if u dont have any .env file just create in below path
 ```
-2nd10WeeksofCloudOps-main.git/backend/.env
+
 
 ### add this mater
 DB_HOST=book.rds.com	#change rds endpoint
 DB_USERNAME=admin	#cahnge to nyour rds user name 
-DB_PASSWORD="veera"   # change to your rds password
+DB_PASSWORD="raj"   # change to your rds password
 PORT=3306
 ```
 ```
@@ -73,7 +73,7 @@ pm2 save
 
  ### Frontend deploy process ###
 ```
-git clone https://github.com/CloudTechDevOps/2nd10WeeksofCloudOps-main.git
+git clone  https://github.com/RajCloudify/3-Tier-Architecture.git
 cd client 
 ```
 ##### edit the config.js
