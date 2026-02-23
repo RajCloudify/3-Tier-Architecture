@@ -4,6 +4,8 @@
 
 ## 🏠 Architecture
 ![Architecture of the application](architecture.gif)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/06763568-f348-4d27-b4a3-67999d1fff99" />
+
 
 ## Tech stack
 
