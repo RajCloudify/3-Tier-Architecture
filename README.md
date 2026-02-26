@@ -3,8 +3,8 @@
 ✨This repository is created to learn and deploy  3-tier application on aws cloud. this project contain three layer Presentation, Application and database
 
 ## 🏠 Architecture
-![Architecture of the application](architecture.gif)
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/06763568-f348-4d27-b4a3-67999d1fff99" />
+![1_w_XKrYpwZsd5wCsB4rzakQ (1)](https://github.com/user-attachments/assets/ea96db2e-caaa-4ee7-b481-0653f2b809f3)
+
 
 
 ## Tech stack
