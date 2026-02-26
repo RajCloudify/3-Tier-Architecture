@@ -106,7 +106,7 @@ sudo cp -r build/* /var/www/html
 ```
 # your frontend part is completed 
 
-### #### after that create frontend tg and loadbalncer and check your loadbalncer is giving project output along with books 
+### #### after that create frontend target group and loadbalncer and check the loadbalncer in the given project output along with books 
 # add the books 
 
 **Thank you so much for reading..😅**
