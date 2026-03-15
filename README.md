@@ -22,7 +22,7 @@
 ```
 1.Create rds database into private subnets
 2.Create two private  servers in private subnets one is for frontend and another one is for backend
-3.Create two TG and loadbalncers one is for frontend another one is for backend 
+3.Create two TG and loadbalncers one is for frontend another one is for backend  
 4.Create both loadblancers in public subnets only and loadbalancer type s internet facing only becuser internal loadbalncer not working for our project 
 ```
 ### ->>connect to backend server--
