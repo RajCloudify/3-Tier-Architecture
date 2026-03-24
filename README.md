@@ -2,6 +2,8 @@
 
 ✨This repository is created to learn and deploy  3-tier application on aws cloud. this project contain three layer Presentation, Application and database
 
+## Blog Link: https://medium.com/@rajattingal1/resilient-three-tier-architecture-on-aws-e3deeef5c2df
+
 ## 🏠 Architecture
 ![1_w_XKrYpwZsd5wCsB4rzakQ (1)](https://github.com/user-attachments/assets/ea96db2e-caaa-4ee7-b481-0653f2b809f3)
 
