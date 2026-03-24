@@ -1,114 +1,72 @@
-   # 🚀 RajCloudify- 3 tier Application
+# 🚀 RajCloudify - 3 Tier Application on AWS
 
-✨This repository is created to learn and deploy  3-tier application on aws cloud. this project contain three layer Presentation, Application and database
+## 📖 Blog Explanation
 
-## Blog Link: https://medium.com/@rajattingal1/resilient-three-tier-architecture-on-aws-e3deeef5c2df
+For a detailed step-by-step guide and architecture explanation, check out the blog:
 
-## 🏠 Architecture
-![1_w_XKrYpwZsd5wCsB4rzakQ (1)](https://github.com/user-attachments/assets/ea96db2e-caaa-4ee7-b481-0653f2b809f3)
+👉 [Resilient Three-Tier Architecture on AWS](https://medium.com/@rajattingal1/resilient-three-tier-architecture-on-aws-e3deeef5c2df)
 
+---
 
+✨ This project demonstrates how to design, deploy, and manage a **resilient 3-tier architecture on AWS Cloud**. It is created for learning and hands-on practice with real-world cloud infrastructure.
 
-## Tech stack
+---
 
-- React 
-- Nodejs
-- MySQL
+## 📌 Architecture Overview
 
+This project follows the classic **3-tier architecture**:
 
-**Note**: You should have nodejs installed on your system. [Node.js](https://nodejs.org/)
+### 🖥️ 1. Presentation Layer
+- User interface (Frontend)
+- Hosted on web servers (e.g., EC2 / Load Balancer)
 
-👉 let install dependency to run react application
+### ⚙️ 2. Application Layer
+- Backend logic and processing
+- Handles communication between frontend and database
 
+### 🗄️ 3. Database Layer
+- Stores application data
+- Uses managed or self-hosted databases (e.g., RDS)
 
-```
-1.Create rds database into private subnets
-2.Create two private  servers in private subnets one is for frontend and another one is for backend
-3.Create two TG and loadbalncers one is for frontend another one is for backend  
-4.Create both loadblancers in public subnets only and loadbalancer type s internet facing only becuser internal loadbalncer not working for our project 
-```
-### ->>connect to backend server--
-```
+---
 
-   cd backend
-```
- ### edit the .env file in bellow path if u dont have any .env file just create in below path
-```
+## ☁️ AWS Services Used
 
+- EC2 (Elastic Compute Cloud)
+- VPC (Virtual Private Cloud)
+- ALB (Application Load Balancer)
+- RDS (Relational Database Service)
+- Auto Scaling
+- Security Groups & IAM
 
-### add this mater
-DB_HOST=book.rds.com	#change rds endpoint
-DB_USERNAME=admin	#cahnge to nyour rds user name 
-DB_PASSWORD="raj"   # change to your rds password
-PORT=3306
-```
-```
-yum install mariadb105-server
-```
-#### SSH into backend server and then run test.sql script from backend to create tables and records 
-```
-mysql -h book.rds.com -u admin -p<password> < test.sql
-```
+---
 
-### Backend deploy process ###
-```
-sudo dnf install -y nodejs
+## 🧱 Key Features
 
-cd backend
+- Highly available architecture
+- Scalable infrastructure
+- Secure network design
+- Separation of concerns (3-tier design)
 
-npm install
+---
 
-npm install dotenv
+## 🎯 Purpose
 
-npm install -g pm2
+This project is built to:
+- Understand real-world AWS architecture
+- Practice cloud deployment strategies
+- Learn best practices for scalable systems
 
-pm2 start index.js --name node-app
+---
 
-pm2 startup
+## 🤝 Contributing
 
-sudo systemctl enable pm2-root
+Feel free to fork this repo, raise issues, or submit pull requests!
 
-pm2 save
-```
-#### after that create backend tg and loadbalncer and check your loadbalncer is giving hello response or not 
+---
 
+## ⭐ Support
 
-# ---------------------------------- FrontEnd---------------------------------------
+If you found this project helpful, please give it a ⭐ on GitHub!
 
- ### Frontend deploy process ###
-```
-git clone  https://github.com/RajCloudify/3-Tier-Architecture.git
-cd client 
-```
-##### edit the config.js
-```
-vi client/src/pages/config.js
-  
-const API_BASE_URL = "http://api.narni.co.in";
- ````
-in above line change to your backend loadbalncer url
-const API_BASE_URL = "http://backend-loadbalancer-url";
-```
-sudo dnf install -y nodejs
-sudo yum install httpd
-sudo systemctl start httpd
-sudo systemctl enable httpd
-```
-### then go to client directory 
-### run below commands
-
-### ****(Use npm run build:
-### When preparing the app for deployment (e.g., to a server or hosting service like AWS, Netlify, or Vercel).
-### Use npm start:
-### During development or to start the app in production (for backend apps).)*****
-```
-npm install 
-npm run build
-sudo cp -r build/* /var/www/html
-```
-# your frontend part is completed 
-
-### #### after that create frontend target group and loadbalncer and check the loadbalncer in the given project output along with books 
-# add the books 
-
-**Thank you so much for reading..😅**
+---
