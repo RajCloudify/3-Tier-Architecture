@@ -1,4 +1,4 @@
-# Stage 1: Build the application
+# Stage 1: Build the application 
 FROM node:18 AS build
 # Set the working directory inside the container
 WORKDIR /app
