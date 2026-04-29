@@ -10,6 +10,8 @@ For a detailed step-by-step guide and architecture explanation, check out the bl
 
 ✨ This project demonstrates how to design, deploy, and manage a **resilient 3-tier architecture on AWS Cloud**. It is created for learning and hands-on practice with real-world cloud infrastructure.
 
+![3-Tier AWS Architecture](./assets/architecture.gif)
+
 ---
 
 ## 📌 Architecture Overview
